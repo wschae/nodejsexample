@@ -40,7 +40,7 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <li>
+        <!--<li>
           <a href="#">Category</a>
         </li>
         <li>
@@ -51,7 +51,10 @@
         </li>
         <li>
           <a href="#">Category</a>
-        </li>
+        </li>-->
+          <% for(var i = 0; i<nav.length;i++){%>
+              <li><a href="<%=nav[i].Link%>"><%=nav[i].Text%></a></li>
+          <%}%>        
       </ul>
       <ul class="nav navbar-right navbar-nav">
         <li class="dropdown">
